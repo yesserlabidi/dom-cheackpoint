@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    background-color: #574e4e;
+    visibility: visible;
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-style: bold;
+    font-size: 35px;
+    margin: 6%;
+    transition: 1s;
+    color: rgb(32, 32, 32);
+}
+
+.logos {
+    width: 200px;
+    display: flex;
+}
+
+.logos a {
+    color: black;
+    transition: 0.5s;
+    font-size: 20px;
+    padding: 4%;
+}
+
+.logos a i {
+    transition: 0.9s;
+    padding: 2%;
+}
+
+.logos a i:hover {
+    transform: rotate(360deg);
+    text-shadow: grey 1px 1px;
+    color: grey;
+}
+
+#imgg {
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (max-width: 500px) {
+    #imgg {
+        height: 250px;
+    }
+    .logos {
+        display: none;
+    }
+    .down-nav-bar {
+        visibility: visible;
+    }
+}
+
+@media screen and (min-width: 501px) {
+    #imgg {
+        height: 350px;
+    }
+    .down-nav-bar {
+        visibility: hidden;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    #imgg {
+        height: 600px;
+    }
+}
+
+.carousel-indicators {
+    visibility: hidden;
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+}
+
+#card {
+    margin: 5%;
+    background-color: #ddd;
+    box-shadow: #232323 1px 1px 1px;
+}
+
+#card div div img {
+    padding: 5%;
+    width: 70%;
+}
+
+#plmn {
+    font-size: 25px;
+}
+
+button {
+    border: 0px solid white;
+    background-color: #ddd;
+}
+
+#center-potato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #262626;
+    color: #fff;
+    border-radius: 10px;
+    padding: 2%;
+    margin: 70px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33rem;
+}
